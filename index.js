@@ -154,24 +154,26 @@ function validateAddress() {
     let address=addressInput.value;
     const addressRegex =/^[A-Za-z0-9\s\.,#-]+$/;
 
-    console.log(address)
     if(address.length!=0) {
-        if(addressRegex.test(address)){
+        
+    //     if(addressRegex.test(address)){
 
-            setError(addressInput,'Invalid address')
-            flagAddress=false;
-        }
-        else{
-            clearError(addressInput)
-            flagAddress=true;
+    //         setError(addressInput,'Invalid address')
+    //         flagAddress=false;
+    //     }
+    //     else{
+    //         clearError(addressInput)
+    //         flagAddress=true;
 
-        }
+    //     }
 
+    // }
+    // else{
+    //     clearError(addressInput);
+    // }
+
+    clearError(addressInput)
     }
-    else{
-        clearError(addressInput);
-    }
-
 }
 //STEPS 1,2,3
 
