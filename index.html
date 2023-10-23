@@ -21,7 +21,6 @@
             </nav>
         </nav>
 
-
         <div class="wrapper">
             <!--Nav Bar-->
             <navbar class="flex-row" id="navLink">
@@ -308,7 +307,7 @@
                     <div class="slot-desp step-3">
                         <div class="form-group step3-group">
                             <input type="date" name="datepicker1" id="date"
-                                class="form-control validate[required] rounded-pill" placeholder="Date*"
+                                class="form-control rounded-pill" placeholder="dd-mm-yyyy"
                                 autocomplete="off" min="" required onchange="selFun(this)">
                             <div class="errorStep3" style="color: red;"></div>
 
@@ -326,6 +325,8 @@
 
                         // // Format the date as "YYYY-MM-DD" for the min attribute
                         // var formattedDate = `${currentYear}-${currentMonth}-${currentDay}`;
+                        // document.getElementById("date").setAttribute("min", formattedDate);
+
 
                         // const today = new Date();
                         // const tomorrow = new Date(today);
@@ -344,7 +345,8 @@
                         // document.getElementById("date").setAttribute("min", formattedDate);
                     </script>
                     <div class="form-group step3-group">
-                        <select name="slot" id="response" class="form-control rounded-pill" required onchange="selFun(this)">
+                        <select name="slot" id="response" class="form-control rounded-pill" required
+                            onchange="selFun(this)">
                             <option value="">Select slot</option>
                             <option value="9:00AM-10:00AM">9:00AM-10:00AM</option>
                             <option value="11:00PM-12:00PM">11:00AM-12:00PM</option>
@@ -360,12 +362,12 @@
                         <input type="text" name="address" id="address"
                             class="form-control validate[required] rounded-pill" placeholder="Address*"
                             autocomplete="off" required onkeyup="validateAddress(this)">
-                            <div class="errorStep3" style="color: red;"></div>
+                        <div class="errorStep3" style="color: red;"></div>
 
                     </div>
 
                     <div class="form-check step3-group" id="check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required >
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                         <label class="form-check-label" for="defaultCheck1">
                             I agree to these <a href="#" style="text-decoration: none; color: black;">Terms and
                                 Conditions</a>. </label>
@@ -476,15 +478,14 @@ Payment gate way....
     </div>
     </div>
     <div class="button-group">
-        <button type="button" id="btn3"
-            class="btn btn-dark font-reg open1 next-step rs_submit_step_one rounded-pill"
+        <button type="button" id="btn3" class="btn btn-dark font-reg open1 next-step rs_submit_step_one rounded-pill"
             style="width:20rem ;  color: orange;">Proceed</button>
     </div>
     <div class="button-group" style="margin: 1rem;">
         <a id="previous" class=" font-reg open1 next-step rs_submit_step_one ">
             << Previous</a>
     </div>
-   
+
     </div>
     </div>
 

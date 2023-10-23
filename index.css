@@ -169,7 +169,6 @@ body {
     overflow-y: auto;
     justify-content: center;
     grid-template-columns: repeat(3, 31%);
-    /*change box size here add % that's all*/
     gap: 1rem;
     overflow: auto;
 }
@@ -181,7 +180,6 @@ body {
     justify-items: center;
     align-items: center;
     padding: 2rem;
-    /*padding add as u wish*/
     grid-template-columns: 35% 65%;
     gap: 0.2rem;
     background-color: white;
@@ -198,7 +196,7 @@ body {
 
 }
 
-select option{
+select option {
     height: 50px;
 }
 
@@ -241,9 +239,7 @@ select option{
 }
 
 input::placeholder {
-    /* Change the color to your desired color */
     color: black !important;
-    /* For example, a reddish color */
 }
 
 .step-4 {
@@ -311,7 +307,6 @@ input::placeholder {
     padding: 1rem;
 }
 
-/**    font-size: 1.5rem;*/
 .section4 {
     padding: 2rem;
     font-family: GothamRoundedMedium;
@@ -346,6 +341,20 @@ input::placeholder {
     color: black;
 }
 
+.flatpickr-mobile:before {
+    content: attr(placeholder);
+    color: gray;
+}
+
+.flatpickr-mobile:focus[value]:not([value=""]):before {
+    display: none;
+}
+
+input[type="hidden"][value]:not([value=""])+.flatpickr-mobile:before {
+    display: none;
+}
+
+
 @media screen and (max-width:990px) {
     #form-wrap {
         width: 50%;
@@ -356,7 +365,8 @@ input::placeholder {
         /*change box size here add % that's all*/
 
     }
-    .innerDiv{
+
+    .innerDiv {
         grid-template-columns: 25% 75%;
         gap: 1.2rem;
     }
@@ -399,7 +409,8 @@ input::placeholder {
     .section4 {
         width: 100%;
     }
-    #transcation{
+
+    #transcation {
         font-size: 1rem;
     }
 }
@@ -471,5 +482,19 @@ input::placeholder {
     #btn1 {
         width: 50rem;
     }
+
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: black;
+        padding: 0;
+        display: flex;
+
+    }
+
+    input[type="date"] {
+        height: 2.5rem;
+        display: flex;
+    }
+
 
 }
