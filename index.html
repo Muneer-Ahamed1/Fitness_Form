@@ -306,9 +306,8 @@
                 <fieldset>
                     <div class="slot-desp step-3">
                         <div class="form-group step3-group">
-                            <input type="date" name="datepicker1" id="date"
-                                class="form-control rounded-pill" placeholder="dd-mm-yyyy"
-                                autocomplete="off" min="" required onchange="selFun(this)">
+                            <input type="date" name="datepicker1" id="date" class="form-control rounded-pill"
+                                placeholder="dd-mm-yyyy" autocomplete="off" min="" required onchange="selFun(this)">
                             <div class="errorStep3" style="color: red;"></div>
 
                         </div>
@@ -441,7 +440,7 @@
 Payment gate way....
 -->
             <section class="section4">
-                <div id="logo">
+                <div id="logo" style="margin: auto;">
 
                 </div>
                 <div class="info1">
@@ -449,14 +448,34 @@ Payment gate way....
                     <p>Your payment has been processed!</p>
                     <p>Details of transcation are included below</p>
                 </div>
-                <h5 id="transcation">Transaction Number:123456789</h5>
+                <h5 id="transcation" style="text-align:center">Transaction Number:123456789</h5>
                 <div class="info2">
                     <h1>AMOUNT TO PAID <span>00/-</span></h1>
                     <h1>TRANSCTION DATE <span>DATE</span></h1>
 
                 </div>
-                <div id="HomeWrap">
-                    <a id="Home" class=" btn  btn-dark font-reg open1 next-step rs_submit_step_one rounded-pill ">
+                <div id="HomeWrap" style="display: flex;">
+                    <a id="Home" class=" btn  btn-dark font-reg open1 next-step rs_submit_step_one rounded-pill "
+                        style="margin: auto;">
+                        Home</a>
+                </div>
+            </section>
+
+            <!--
+                payment Break down code is here....
+            -->
+
+            <section class="section5">
+                <div id="logo2">
+
+                </div>
+                <div class="payBreak">
+                    <h1 style="color: black;">TICKET PAYMENT Failure</h1>
+                    <p style="color: black;">Your payment has been Failed!</p>
+                    <h5 id="transcation" style="text-align: center;">Your Transaction Number:123456789</h5>
+                </div>
+                <div id="HomeWrap2">
+                    <a id="Home2" class=" btn  btn-dark font-reg open1 next-step rs_submit_step_one rounded-pill ">
                         Home</a>
                 </div>
             </section>

@@ -307,7 +307,7 @@ input::placeholder {
     padding: 1rem;
 }
 
-.section4 {
+ .section4 {
     padding: 2rem;
     font-family: GothamRoundedMedium;
     display: flex;
@@ -317,7 +317,7 @@ input::placeholder {
     align-items: center;
     gap: 1rem;
     justify-content: flex-end;
-}
+} 
 
 .info2 {
     width: 100%;
@@ -353,7 +353,34 @@ input::placeholder {
 input[type="hidden"][value]:not([value=""])+.flatpickr-mobile:before {
     display: none;
 }
+.section5{
+    padding: 2rem;
+    font-family: GothamRoundedMedium;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90vh;
+    margin-inline: auto;
+    align-items: center;
+    gap: 1rem;
+    justify-content:space-evenly;
 
+}
+.payBreak{
+    width: 100%;
+    padding: 1rem;
+
+}
+
+.payBreak>h1 {
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.payBreak>p {
+    text-align: center;
+    font-size: 1rem;
+}
 
 @media screen and (max-width:990px) {
     #form-wrap {
@@ -397,6 +424,19 @@ input[type="hidden"][value]:not([value=""])+.flatpickr-mobile:before {
     .step2 {
         grid-template-columns: 40% 40%;
     }
+    input[type="date"]:before {
+        content: attr(placeholder) !important;
+        color: black;
+        padding: 0;
+        display: flex;
+
+    }
+
+    input[type="date"] {
+        height: 2.5rem;
+        display: flex;
+    }
+
 
 }
 
@@ -407,6 +447,9 @@ input[type="hidden"][value]:not([value=""])+.flatpickr-mobile:before {
     }
 
     .section4 {
+        width: 100%;
+    }
+    .section5{
         width: 100%;
     }
 
@@ -445,6 +488,9 @@ input[type="hidden"][value]:not([value=""])+.flatpickr-mobile:before {
     .section4 {
         padding: 1rem;
     }
+    .section5{
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -461,6 +507,12 @@ input[type="hidden"][value]:not([value=""])+.flatpickr-mobile:before {
     }
 
     .info1>p {
+        font-size: 0.7rem;
+    }
+    .payBreak>h1{
+        font-size: 1.2rem;
+    }
+    .payBreak>p{
         font-size: 0.7rem;
     }
 
